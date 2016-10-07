@@ -1,5 +1,6 @@
 package com.example.thibautbrunel.maquette;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -72,14 +74,25 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        switch(id) {
+            case R.id.home:
+                Intent i = new Intent(MainActivity.this, MyAccountActivity.class);
+                startActivity(i);
+                break;
+            case R.id.shopping_list:
+                Toast.makeText(MainActivity.this, "Shopping list", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.my_fridge:
+                Toast.makeText(MainActivity.this, "Frigo", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.my_recipes:
+                Toast.makeText(MainActivity.this, "Recettes", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.favorites:
+                Toast.makeText(MainActivity.this, "Favoris", Toast.LENGTH_LONG).show();
+                break;
+            default:
+                break;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
