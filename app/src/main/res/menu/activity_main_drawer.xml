@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Accueil"/>
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="Ma liste de courses" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="Mon frigo" />
+    </group>
+
+    <item android:title="RECETTES">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Mes recettes" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="Mes favoris" />
+        </menu>
+    </item>
+
+</menu>
