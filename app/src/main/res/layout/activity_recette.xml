@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thibautbrunel.maquette.MyAccountActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@drawable/tarte_tatin">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="Les ingrédients"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp">
+
+                    <ImageView
+                        android:id="@+id/name_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/eggs"
+                        android:layout_marginRight="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/name_icon"
+                        android:layout_toRightOf="@+id/name_icon"
+                        android:text="6 oeufs"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_add_shopping_cart_black_24dp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp">
+
+                    <ImageView
+                        android:id="@+id/birth_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/apple"
+                        android:layout_marginRight="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/birth_icon"
+                        android:layout_toRightOf="@+id/birth_icon"
+                        android:text="5 Pommes"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_add_shopping_cart_black_24dp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="La recette"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp">
+
+                    <TextView
+                        android:id="@+id/_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@android:color/white"
+                        android:text="1"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:layout_marginRight="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/_icon"
+                        android:layout_toRightOf="@+id/_icon"
+                        android:text="Éplucher et couper les pommes en deux"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp">
+
+                    <TextView
+                        android:id="@+id/_icon2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@android:color/white"
+                        android:text="2"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:layout_marginRight="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/_icon2"
+                        android:layout_toRightOf="@+id/_icon2"
+                        android:text="Mettre du beurre à fondre dans un moule et y mettre une fine pluie de sucre"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp">
+
+                    <TextView
+                        android:id="@+id/_icon3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@android:color/white"
+                        android:text="3"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:layout_marginRight="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/_icon3"
+                        android:layout_toRightOf="@+id/_icon3"
+                        android:text="..."
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="La note"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:id="@+id/yellow_star1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/yellow_star"/>
+
+                    <ImageView
+                        android:id="@+id/yellow_star2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/yellow_star"/>
+
+                    <ImageView
+                        android:id="@+id/yellow_star3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/yellow_star"/>
+
+                    <ImageView
+                        android:id="@+id/yellow_star4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/yellow_star_cut"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="∙"
+                        android:gravity="center"
+                        android:textSize="50sp"
+                        android:textColor="@android:color/black"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="3,8"
+                        android:textSize="52sp"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/rating_bars"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/comments_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_face_black_36dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOM"
+                                android:textSize="20sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="COMMENTAIRE"
+                                android:layout_marginTop="8dp"
+                                android:textSize="20sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@android:color/black"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_face_black_36dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NOM"
+                                android:textSize="20sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="COMMENTAIRE"
+                                android:layout_marginTop="8dp"
+                                android:textSize="20sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

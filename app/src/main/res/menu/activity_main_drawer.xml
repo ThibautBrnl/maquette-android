@@ -4,24 +4,29 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home"
-            android:title="Accueil"/>
+            android:title="Accueil"
+            android:icon="@drawable/ic_home_white_24dp"/>
 
         <item
             android:id="@+id/shopping_list"
-            android:title="Ma liste de courses" />
+            android:title="Ma liste de courses"
+            android:icon="@drawable/ic_format_list_bulleted_white_24dp"/>
         <item
             android:id="@+id/my_fridge"
-            android:title="Mon frigo" />
+            android:title="Mon frigo"
+            android:icon="@drawable/fridge"/>
     </group>
 
     <item android:title="RECETTES">
         <menu>
             <item
                 android:id="@+id/my_recipes"
-                android:title="Mes recettes" />
+                android:title="Mes recettes"
+                android:icon="@drawable/ic_restaurant_white_24dp"/>
             <item
                 android:id="@+id/favorites"
-                android:title="Mes favoris" />
+                android:title="Mes favoris"
+                android:icon="@drawable/ic_star_rate_white_18dp"/>
         </menu>
     </item>
 
