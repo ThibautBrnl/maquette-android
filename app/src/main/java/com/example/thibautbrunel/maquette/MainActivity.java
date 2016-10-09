@@ -119,7 +119,8 @@ public class MainActivity extends AppCompatActivity
                 b.putInt("layout", R.layout.content_main_shopping_list);
                 break;
             case R.id.my_fridge:
-                Toast.makeText(MainActivity.this, "Frigo", Toast.LENGTH_LONG).show();
+                setMenu(false, true);
+                b.putInt("layout", R.layout.content_main_my_fridge);
                 break;
             case R.id.my_recipes:
                 b.putInt("layout", R.layout.content_main_shopping_list);
